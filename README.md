@@ -1,196 +1,216 @@
-# 📚 Engineering Library System (EduLibrary)
+# 📚 EduLibrary – Engineering Library System
 
-A modern, single-page web application designed to give B.Tech students **instant access to curated textbooks** across all subjects.
-Users can search, preview, download, and organize books—all without leaving the platform.
+<p align="center">
+  <img src="./assets/kmk-logo.svg" alt="EduLibrary Logo" width="120" />
+</p>
+
+<p align="center">
+  <b>A modern, fast, and distraction-free textbook explorer built for B.Tech students.</b>
+</p>
+
+<p align="center">
+  <a href="https://kotramanojkumar.github.io/EduLibrary/">🔗 Live Demo</a> •
+  <a href="https://github.com/kotramanojkumar/EduLibrary">📂 Source Code</a>
+</p>
 
 ---
 
 ## 🚀 Overview
 
-**EduLibrary** provides a seamless digital library experience by combining:
+**EduLibrary** is a single-page web application that gives engineering students **instant access to curated textbooks** across multiple subjects.
 
-* 📖 Subject-wise organization
-* 🔍 Real-time search
-* 📄 In-browser PDF reading
-* ❤️ Personalized collections (Favorites & Reading List)
+Everything is designed to be:
 
-Everything is designed for **speed, simplicity, and student productivity**.
+* Fast
+* Clean
+* Distraction-free
 
----
-
-## ✨ Key Features
-
-### 📌 1. Unified Subject Grid
-
-* All engineering subjects displayed in a **single responsive grid**
-* Each card includes:
-
-  * Subject title
-  * Short description
-  * Number of available books
+No page reloads. No unnecessary complexity. Just a smooth library experience.
 
 ---
 
-### 🔍 2. Smart Search
+## ✨ Core Highlights
 
-* Live filtering across:
+* 📚 40+ engineering subjects
+* 📖 100+ curated textbooks
+* 🔍 Real-time search and filtering
+* 📖 Built-in PDF reader
+* ❤️ Favorites & Reading List
+* 🌙 Dark mode with persistence
+* 📱 Fully responsive design
+* ⚡ Smooth and modern UI
+
+---
+
+## 🧠 Why This Project Exists
+
+Engineering resources are usually:
+
+* Scattered
+* Hard to navigate
+* Time-consuming to access
+
+What this solves:
+
+* Everything in one place
+* Structured subject-wise access
+* Faster discovery and study flow
+
+---
+
+## 🔍 Features
+
+### 📚 Unified Subject Grid
+
+* All subjects shown in a **single clean grid**
+* Each card shows:
+
+  * Subject name
+  * Description
+  * Book count
+
+---
+
+### 🔎 Smart Search
+
+* Instant filtering across:
 
   * Subjects
   * Book titles
   * Authors
-* Works instantly without page reload
+* Works in real-time without reload
 
 ---
 
-### 📚 3. Subject-Based Book View
+### 📖 Subject-Based Book View
 
-* Click any subject to:
+* Click a subject → see all books
+* Each book includes:
 
-  * View all books
-  * See cover, author, edition, rating
-* Clean card-based layout
+  * Cover
+  * Author
+  * Edition
+  * Rating
 
 ---
 
-### 📖 4. Built-in PDF Reader
+### 📄 Built-in PDF Reader
 
 * Open books directly inside the app
-* Features:
-
-  * Modal-based viewer
-  * No forced downloads
-  * Smooth reading experience
+* Modal-based viewer
+* No forced downloads
 
 ---
 
-### ⬇️ 5. Download & Open Options
+### ⬇️ Open & Download
 
-* Open PDF in a new tab
-* Download directly
-* Supports external and hosted PDF links
+* Open in new tab
+* Download instantly
+* Supports external + hosted PDFs
 
 ---
 
-### ❤️ 6. Favorites System
+### ❤️ Personalization
 
-* Save important books
-* Quick access anytime
+* Save books to **Favorites**
+* Create a **Reading List**
 * Stored using `localStorage`
 
 ---
 
-### 📘 7. Reading List
+### 🌗 Dark Mode
 
-* Build your semester study plan
-* Add/remove books easily
-* Persistent across sessions
-
----
-
-### 🌗 8. Dark Mode
-
-* Toggle between light and dark themes
-* Smooth UI transitions
-* Stored in browser memory
+* Toggle light/dark theme
+* Smooth transitions
+* Preference saved in browser
 
 ---
 
-### 📊 9. Animated Statistics Section
+### 📊 Stats & Feedback
 
-* Displays platform metrics like:
-
-  * Students onboarded
-  * Subjects available
-  * Textbooks curated
+* Animated statistics section
+* Simple review/feedback system with instant UI response
 
 ---
 
-### 📝 10. Review System
+### 📱 Responsive Design
 
-* Users can submit feedback
-* Instant UI response + toast notification
-
----
-
-### 📱 11. Fully Responsive Design
-
-* Optimized for:
-
-  * Mobile 📱
-  * Tablet 📲
-  * Desktop 💻
-* Smooth animations and transitions
+* Works on mobile, tablet, desktop
+* Touch-friendly UI
+* Consistent layout everywhere
 
 ---
 
-## 🗂️ Project Structure
+## 🛠️ Tech Stack
 
-```
-kotramanojkumar-edulibrary/
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* JSON (data handling)
+
+---
+
+## ⚙️ Project Structure
+
+```bash
+EduLibrary/
 │
-├── index.html              # Main application UI
-├── README.md              # Project documentation
+├── index.html
+├── README.md
+│
+├── assets/
+│   └── kmk-logo.svg
 │
 ├── css/
-│   └── styles.css         # Styling (responsive + themes)
+│   └── styles.css
 │
 ├── js/
-│   ├── script.js          # Core logic (state + UI handling)
-│   ├── app.js             # Component loader (optional modular version)
-│
-│   ├── components/        # Modular HTML components
-│   │   ├── header.html
-│   │   ├── hero.html
-│   │   ├── mainContent.html
-│   │   ├── readerModal.html
-│   │   └── footer.html
-│
-│   └── *.html             # Duplicate standalone component files
+│   ├── script.js
+│   ├── app.js
+│   └── components/
 │
 └── data/
-    └── books.json         # Subjects + books dataset
+    └── books.json
 ```
 
 ---
 
-## 📦 Data Source
+## 📦 Data
 
-* `books.json` contains:
+* JSON-based dataset (`books.json`)
+* Includes:
 
-  * 20+ engineering subjects
-  * 4–5 books per subject
-* Each book includes:
+  * Subjects
+  * Books per subject
+* Each book contains:
 
   * Title
   * Author
   * Edition
   * Rating
-  * Cover image
+  * Cover
   * PDF link
 
 ---
 
-## ⚙️ How to Run Locally
+## ⚙️ Run Locally
 
-Since the app uses `fetch()` to load JSON data, it must be served over HTTP.
+Because the app uses `fetch()`, you need a local server.
+
+### Using VS Code
+
+1. Open project folder
+2. Install **Live Server extension**
+3. Right-click `index.html` → Open with Live Server
 
 ---
 
-###  VS Code Live Server
-
-1. Open project folder in VS Code
-2. Install **Live Server extension**
-3. Right-click `index.html` → **Open with Live Server**
-
-
-
 ## 🧠 Core Concepts Used
 
-* Vanilla JavaScript (No frameworks)
-* DOM Manipulation
-* Local Storage (state persistence)
+* DOM manipulation
 * Event-driven architecture
-* Responsive CSS (Flexbox + Grid)
+* LocalStorage (state persistence)
+* Responsive layout (Flexbox + Grid)
 * Modal UI design
 * Dynamic rendering
 
@@ -198,39 +218,54 @@ Since the app uses `fetch()` to load JSON data, it must be served over HTTP.
 
 ## 🎯 Design Philosophy
 
-* **Single-page experience** → no navigation friction
-* **Student-first UX** → fast, minimal, distraction-free
-* **Modern UI** → inspired by dashboards, not traditional libraries
-* **Performance-focused** → lightweight and responsive
+* Single-page experience → no friction
+* Student-first UX → fast and minimal
+* Modern UI → feels like a real product
+* Performance-first → lightweight and responsive
 
 ---
 
-## ⚠️ Important Notes
+## ⚠️ Notes
 
-* No backend required (fully frontend-based)
-* Data is static via JSON
-* PDF viewer uses embedded iframe
-* Favorites & Reading List stored locally (browser)
+* Fully frontend project (no backend)
+* Static JSON data
+* PDF viewer uses iframe
+* Data persists locally in browser
 
 ---
 
-## 🔮 Future Enhancements
+## 🔮 Future Improvements
 
-* 🔐 User authentication (login/signup)
-* ☁️ Cloud sync for reading lists
-* ⭐ Book ratings & reviews system
-* 📊 AI-based recommendations
-* 📥 Upload your own notes/books
-* 🔎 Advanced filters (year, difficulty, author)
+* 🔐 User authentication
+* ☁️ Cloud sync
+* ⭐ Ratings & reviews
+* 🤖 AI recommendations
+* 📥 Upload notes/books
+* 🔎 Advanced filters
 
 ---
 
 ## 👨‍💻 Author
 
 **Manoj Kumar**
-Engineering Library System – 2026
+B.Tech @ VIT Vellore
 
+---
 
+## 📄 License
 
-* Make a **GitHub-optimized version (with badges, preview GIF, screenshots)**
-* Or create a **super short README for submission (1-page)**
+This project is open and free to use, modify, and distribute.
+
+---
+
+### Final touch
+
+This version:
+
+* Feels like a **real SaaS/product README**
+* Clean hierarchy
+* No duplication
+* Strong for **GitHub + resume + placements**
+
+---
+Just tell me 👍
