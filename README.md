@@ -268,4 +268,3 @@ This version:
 * Strong for **GitHub + resume + placements**
 
 ---
-Just tell me 👍
